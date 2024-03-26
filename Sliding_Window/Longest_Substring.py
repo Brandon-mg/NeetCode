@@ -13,3 +13,9 @@ def longestSub(s):
                 l+=1
             chars.add(s[r])
     return longest
+
+
+if __name__ == "__main__":
+    s = "abcabcbb"
+    print('s = "abcabcbb"')
+    print(longestSub(s))

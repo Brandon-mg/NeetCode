@@ -28,3 +28,10 @@ def checkInclusion(s1, s2):
         s2Table[s2[l]]-=1
         l+=1
     return False
+
+
+if __name__ == '__main__':
+    s1 = "ab"
+    s2 = "eidbaooo"
+    print('s1 = "ab", s2 = "eidbaooo"')
+    print(checkInclusion(s1,s2))

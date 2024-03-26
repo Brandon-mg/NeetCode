@@ -12,3 +12,9 @@ def charReplace(s,k):
         else:
             maxlen += 1
     return maxlen
+
+if __name__ == "__main__":
+    s = "ABAB"
+    k = 2
+    print('s = "ABAB", k = 2')
+    print(charReplace(s,k))
