@@ -1,0 +1,27 @@
+def validParen(s):
+    stack = []
+    paren_list = {"(":")", "{":"}","[":"]"}
+    for i in s:
+        if i in paren_list.values() and len(stack)==0:
+            return False
+        if i in paren_list.keys():
+            stack.append(i)
+        elif i == paren_list.get(stack[-1]):
+            stack.pop
+        else:
+            return False
+    if len(stack)==0:
+        return True
+    return False
+
+
+if __name__ == '__main__':
+    s = "()"
+    print('s = "()"')
+    print(validParen(s))
+    s = "()[]{\}"
+    print('s = "()[]{\}"')
+    print(validParen(s))
+    s = "(]"
+    print('s = "(]"')
+    print(validParen(s))
